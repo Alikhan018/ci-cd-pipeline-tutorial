@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: Add env variables
 
 on:
   push:
@@ -8,20 +8,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      MY_ENV: SECRET KEY
+
     steps:
-    - name: Pipleline Working
+    - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Install Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
-
-    - name: Install Dependencies
-      run: npm install
-
-    - name: Run Tests
-      run: npm run test
-
-    - name: Start Application
-      run: npm run start
+    - name: Add env variables
+      run: echo "my env is $MY_ENV"
