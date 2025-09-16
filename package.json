@@ -1,0 +1,27 @@
+{
+  "name": "ci-cd-basic",
+  "version": "1.0.0",
+  "description": "basic knowledge of ci/cd pipelines",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alikhan018/ci-cd-pipeline-tutorial.git"
+  },
+  "keywords": [
+    "ci",
+    "ci/cd",
+    "cd",
+    "pipelines",
+    "devops"
+  ],
+  "author": "Muhammad Ali Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alikhan018/ci-cd-pipeline-tutorial/issues"
+  },
+  "homepage": "https://github.com/Alikhan018/ci-cd-pipeline-tutorial#readme"
+}
